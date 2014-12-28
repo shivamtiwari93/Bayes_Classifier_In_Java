@@ -17,7 +17,6 @@ public class Initiallizer {
         
         bayes.learn("positive", Arrays.asList(positiveText));
 
-        
         bayes.learn("negative", Arrays.asList(negativeText));
         
         String result = bayes.classify(Arrays.asList(unknownText1)).getCategory();
